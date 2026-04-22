@@ -64,6 +64,34 @@ export const createApp = (getPrisma: () => DbClient) => {
       message: "server running",
     }))
 
+    // Debug endpoint — trace database connection & data
+    .get("/debug", async () => {
+      try {
+        const userCount = await getPrisma().user.count();
+        const sample = await getPrisma().user.findFirst();
+        
+        return {
+          status: "ok",
+          database: {
+            type: "PostgreSQL AWS RDS",
+            connected: true,
+            userCount: userCount,
+            sampleUser: sample || null,
+          },
+          timestamp: new Date().toISOString(),
+        };
+      } catch (error) {
+        return {
+          status: "error",
+          database: {
+            type: "PostgreSQL AWS RDS",
+            connected: false,
+            error: error instanceof Error ? error.message : String(error),
+          },
+        };
+      }
+    })
+
     // Users
     .get("/users", async () => {
       const users = await getPrisma().user.findMany();
