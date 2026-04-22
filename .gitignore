@@ -31,3 +31,8 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 /generated/prisma
 
 # Environment files
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
