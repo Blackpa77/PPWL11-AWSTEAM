@@ -1,6 +1,4 @@
-# PPWL 11/Monorepo - AWS Teams (Tim 1)
-
-
+# PPWL 11/Monorepo - AWS Teams 
 ## Kelas A / Tim 2
 | Nama | NIM | Job |
 |------|-----|-----|
