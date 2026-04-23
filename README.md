@@ -7,7 +7,7 @@
 | Arjun Maheswara Paundra  | H1101241029 | Admin                  |
 | Aurellya Yocelyn Prasista| H1101241043 | Budget & Cost          |
 | Febryanti Khumairoh      | H1101241006 | RDS Database           |
-| Marcello Chrisdiantoro   | H11012410xx | Lambda Backend         |
+| Marcello Chrisdiantoro   | H1101241041 | Lambda Backend         |
 | Regisha Sheren           | H1101241036 | S3+CloudFront Frontend |
 
 ## Canva - Arsitektur Diagram AWS
