@@ -21,7 +21,7 @@
 | RDS Database        | [Lihat screenshot](https://drive.google.com/file/d/1dNLiLGlMa093Nx4OU6XjDHuH1JeH6BhL/view?usp=drive_link)    | ✅ |
 | Parameter Store     | [Lihat screenshot](https://drive.google.com/file/d/1owiaWJ7nnJkCoIFntzFhTPX6QXNv6VMa/view?usp=drive_link)    | ✅ |
 | Lambda Backend      | [Lihat screenshot](https://drive.google.com/file/d/1kQFUvlwCSZRXhIR3Dq6FerdQY5I4eRL_/view?usp=drive_link)    | ✅ |
-| CloudFront Frontend | [Lihat screenshot](https://drive.google.com/file/d/1R2UHaVDd1BgIju-4fIjDkp0HrMkamNGU/view?usp=drive_link)    | ⚠️|
+| CloudFront Frontend | [Lihat screenshot](https://drive.google.com/file/d/1u8_v_CozoCgG1NBmI-wYVrHx01aHIygT/view?usp=drive_link)    | ✅ |
 | Budget (Monthly)    | [Lihat screenshot](https://drive.google.com/file/d/1ZkkcupFEN7tkW6ocbO7UXCOZpFzms_TL/view?usp=drive_link)    | ✅ |
 | Task Cost Report    | [Lihat screenshot](https://drive.google.com/file/d/1B3H3aWo-i78uOXRPBedd2BoupaVOzlbf/view?usp=drive_link)    | ✅ |
 
@@ -39,16 +39,11 @@
 Lokasi: AWS Console → CloudFront → Create distribution
 
 Alur sebelum bug:
-Login akun
-Mencoba membuat CloudFront distribution untuk frontend
-Setelah mengisi konfigurasi, muncul error verifikasi akun
-Pesan error:
-Your account must be verified before you can add new CloudFront resources.
+Login akun kemudian mencoba membuat CloudFront distribution untuk frontend tapi setelah mengisi konfigurasi, muncul error verifikasi akun
+[Pesan error: "Your account must be verified before you can add new CloudFront resources".](https://drive.google.com/file/d/1R2UHaVDd1BgIju-4fIjDkp0HrMkamNGU/view?usp=drive_link)
 
 Solusi yang dicoba:
-Membuka kasus ke AWS Support via Account and billing support
-Menjelaskan bahwa ini untuk tugas kuliah (university project)
-Menyertakan error message dan region yang digunakan (us-east-1).
+Membuka kasus ke AWS Support via Account and billing support kemudian menjelaskan bahwa ini untuk tugas kuliah dan menyertakan error message dan region yang digunakan (us-east-1).
 
 Selain itu:
 Meminta bantuan dari kelompok lain yang akun AWS-nya sudah terverifikasi untuk membuat CloudFront distribution.
