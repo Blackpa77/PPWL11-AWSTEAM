@@ -9,6 +9,7 @@
 | Febryanti Khumairoh      | H1101241006 | RDS Database           |
 | Marcello Chrisdiantoro   | H1101241041 | Lambda Backend         |
 | Regisha Sheren           | H1101241036 | S3+CloudFront Frontend |
+| Nadylla Ayu Wulandari    | H1101211051 | Test & Docs            |
 
 ## Canva - Arsitektur Diagram AWS
 🔗 [Link Diagram Arsitektur (Canva Papan Tulis)](https://www.canva.com/design/DAHHkkjzpVo/-mjSpF-7zbASW614qKZORg/edit)  
@@ -18,9 +19,9 @@
 |----------|------------|--------|
 | S3 Frontend         | [Lihat screenshot](https://drive.google.com/file/d/1IfpVUSgwierCJolv9xVsJN7nLzjlAzEN/view?usp=drive_link)    | ✅ |
 | RDS Database        | [Lihat screenshot](https://drive.google.com/file/d/1dNLiLGlMa093Nx4OU6XjDHuH1JeH6BhL/view?usp=drive_link)    | ✅ |
-| Parameter Store     | [Lihat screenshot](#)    | ✅ |
+| Parameter Store     | [Lihat screenshot](https://drive.google.com/file/d/1owiaWJ7nnJkCoIFntzFhTPX6QXNv6VMa/view?usp=drive_link)    | ✅ |
 | Lambda Backend      | [Lihat screenshot](https://drive.google.com/file/d/1kQFUvlwCSZRXhIR3Dq6FerdQY5I4eRL_/view?usp=drive_link)    | ✅ |
-| CloudFront Frontend | [Lihat screenshot](https://drive.google.com/file/d/1R2UHaVDd1BgIju-4fIjDkp0HrMkamNGU/view?usp=drive_link)    | ✅ |
+| CloudFront Frontend | [Lihat screenshot](https://drive.google.com/file/d/1R2UHaVDd1BgIju-4fIjDkp0HrMkamNGU/view?usp=drive_link)    | ⚠️|
 | Budget (Monthly)    | [Lihat screenshot](https://drive.google.com/file/d/1ZkkcupFEN7tkW6ocbO7UXCOZpFzms_TL/view?usp=drive_link)    | ✅ |
 | Task Cost Report    | [Lihat screenshot](https://drive.google.com/file/d/1B3H3aWo-i78uOXRPBedd2BoupaVOzlbf/view?usp=drive_link)    | ✅ |
 
@@ -52,5 +53,5 @@ Menyertakan error message dan region yang digunakan (us-east-1).
 Selain itu:
 Meminta bantuan dari kelompok lain yang akun AWS-nya sudah terverifikasi untuk membuat CloudFront distribution.
 Dari CloudFront itu semua request frontend ke backend Lambda menjadi HTTPS, CORS terselesaikan, dan aplikasi berjalan normal. 
-[Users](https://drive.google.com/file/d/11njoKsbMJT_sNGDpsa9cvSizXhPKLTv3/view?usp=drive_link)  
-[Classroom](https://drive.google.com/file/d/1dTY1YDYieEjsD3o915SgkMAhWlFDFDHK/view?usp=drive_link) 
+1. [Tampilan Users CloudFront](https://drive.google.com/file/d/11njoKsbMJT_sNGDpsa9cvSizXhPKLTv3/view?usp=drive_link)  
+2. [Tampilan Classroom CloudFront](https://drive.google.com/file/d/1dTY1YDYieEjsD3o915SgkMAhWlFDFDHK/view?usp=drive_link) 
