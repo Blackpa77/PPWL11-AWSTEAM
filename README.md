@@ -4,11 +4,11 @@
 ## Kelas A / Tim 2
 | Nama | NIM | Job |
 |------|-----|-----|
-| Arjun Maheswara Paundra | H11012410xx | Admin |
-| Aurellya Yocelyn Prasista| H1101241043 | Budget & Cost |
-| Febryanti Khumairoh | H11012410xx | RDS Database |
-| Marcello Chrisdiantoro | H11012410xx | Lambda Backend |
-| Regisha Sheren | H1101241036 | S3+CloudFront Frontend |
+| Arjun Maheswara Paundra  | H1101241029 | Admin                  |
+| Aurellya Yocelyn Prasista| H1101241043 | Budget & Cost          |
+| Febryanti Khumairoh      | H1101241006 | RDS Database           |
+| Marcello Chrisdiantoro   | H11012410xx | Lambda Backend         |
+| Regisha Sheren           | H1101241036 | S3+CloudFront Frontend |
 
 ## Canva - Arsitektur Diagram AWS
 🔗 [Link Diagram Arsitektur (Canva Papan Tulis)](https://canva.link/xxxxx)  
