@@ -1,13 +1,13 @@
 import { Elysia } from "elysia";
 import { cookie } from "@elysiajs/cookie";
 import { jwt } from "@elysiajs/jwt";
-import { cors } from "@elysiajs/cors"; // Tambahkan cors kalau belum ada
+import { cors } from "@elysiajs/cors";
 import { createOAuthClient, getAuthUrl } from "./auth";
 import { getCourses, getCourseWorks, getSubmissions } from "./classroom";
 import type { ApiResponse, HealthCheck, User } from "shared";
 import type { DbClient } from "./types";
 
-// Auth middleware
+// Auth middleware — reusable di semua route yang butuh autentikasi
 const makeAuthMiddleware = (jwtInstance: any) =>
   async ({ headers, set }: any) => {
     const authHeader = headers.authorization;
@@ -27,9 +27,11 @@ const makeAuthMiddleware = (jwtInstance: any) =>
     return payload;
   };
 
+// Factory menerima `getPrisma` sebagai dependency injection
+// sehingga dev pakai LibSQL, prod pakai PostgreSQL — tanpa mengubah routes
 export const createApp = (getPrisma: () => DbClient) => {
   const app = new Elysia()
-    .use(cors()) // Penting: Izinkan akses dari domain mana pun
+    .use(cors())
     .use(cookie())
     .use(
       jwt({
@@ -38,8 +40,7 @@ export const createApp = (getPrisma: () => DbClient) => {
         exp: "1d",
       })
     )
-    
-    // BAGIAN .onRequest YANG REWEL SUDAH DIHAPUS BIAR GAK 401 LAGI
+
 
     // Health check
     .get("/", (): ApiResponse<HealthCheck> => ({
@@ -47,7 +48,7 @@ export const createApp = (getPrisma: () => DbClient) => {
       message: "server running",
     }))
 
-    // Debug endpoint
+    // Debug endpoint — trace database connection & data
     .get("/debug", async () => {
       try {
         const userCount = await getPrisma().user.count();
@@ -75,7 +76,7 @@ export const createApp = (getPrisma: () => DbClient) => {
       }
     })
 
-    // Users — Sekarang sudah publik dan gak bakal 401
+    // Users
     .get("/users", async () => {
       const users = await getPrisma().user.findMany();
       const response: ApiResponse<User[]> = {
@@ -103,7 +104,6 @@ export const createApp = (getPrisma: () => DbClient) => {
         refresh_token: tokens.refresh_token,
       });
 
-      // Pastikan FRONTEND_URL di env backend sudah mengarah ke ppwl-a2.store
       return redirect(`${process.env.FRONTEND_URL}/classroom?token=${token}`);
     })
 

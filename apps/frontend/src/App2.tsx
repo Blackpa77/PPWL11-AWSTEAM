@@ -50,7 +50,7 @@ export default function App() {
             </TableHeader>
 
             <TableBody>
-              {users.map((user) => (
+              {users?.map((user) => (
                 <TableRow key={user.id}>
                   <TableCell>{user.id}</TableCell>
                   <TableCell>{user.name}</TableCell>
