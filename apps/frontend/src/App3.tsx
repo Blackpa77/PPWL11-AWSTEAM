@@ -232,8 +232,8 @@ export default function App() {
     const tokenFromUrl = url.searchParams.get("token")
 
     if (tokenFromUrl) {
-      // Bersihkan token dari URL sebelum validasi
-      window.history.replaceState({}, document.title, "/")
+      // Bersihkan token dari URL sebelum validasi (TETAP DI HALAMAN CLASSROOM)
+      window.history.replaceState({}, document.title, window.location.pathname)
       tokenStorage.set(tokenFromUrl)
       tokenRef.current = tokenFromUrl
     } else {
