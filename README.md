@@ -26,7 +26,7 @@
 ## Layanan Berjalan & Akses
 | Layanan | URL / Endpoint | Status |
 |---------|----------------|--------|
-| Frontend (CloudFront) | `https://d1keblkrm5z9c0.cloudfront.net/`                                  | ✅ |
+| Frontend (CloudFront) | `https://www.ppwl-a2.store/`                                  | ✅ |
 | Backend Lambda | `https://zn5qcppmk2j6kbxsckfmk72qvq0pravj.lambda-url.us-east-1.on.aws`           | ✅ |
 | RDS PostgreSQL | `postgresql://postgres:tim2ppwl@monorepo-db.cy9qaey8u3kn.us-east-1.rds.amazonaws.com:5432/monorepo_prod` | ✅ |
 | S3 Bucket (static) | ` http://s3-monorepo-frontend-blackpa.s3-website-us-east-1.amazonaws.com`    | ✅ |
